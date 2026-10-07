@@ -30,3 +30,7 @@ def if_even_add_to_list():
             list.append(num)
 
 if_even_add_to_list()
+
+a = [2,5,6,7,3]
+a[1:] = 54
+print(a)
