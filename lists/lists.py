@@ -31,6 +31,10 @@ def if_even_add_to_list():
 
 if_even_add_to_list()
 
-a = [2,5,6,7,3]
-a[1:] = 54
-print(a)
+def convert_to_percent(scores: list[int], max_marks: int):
+    percent_scores: list[float] = []
+
+    for i in range(len(scores)):
+        percent_scores.append((scores[i]/max_marks)*100)
+    return percent_scores
+print(convert_to_percent([2,3,45,5,23,88], 90))

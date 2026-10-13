@@ -1,6 +1,6 @@
 # GET THE DUPES OUT
 
-def GET_THE_DUPES_OUT(nums: list[int]):
+def GET_THE_DUPES_OUT(nums: list[int]) -> tuple[list[int], list[int]]:
     dupes:      list[int]   = []
     no_dupes:   list[int]   = []
 
@@ -10,6 +10,6 @@ def GET_THE_DUPES_OUT(nums: list[int]):
         else:
             dupes.append(num)
 
-    return no_dupes, dupes
+    return (no_dupes, dupes)
 
 print(GET_THE_DUPES_OUT([1,2,2,3,3,3,4,4,4,4]))
